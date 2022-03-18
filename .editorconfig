@@ -1,0 +1,18 @@
+# top-most EditorConfig file
+root = true
+
+[*] # 所有文件
+charset = utf-8  # 文件字符集为utf-8
+end_of_line = lf  # 换行类型，解决系统的不同 1.cr mac回车 2.lf unix换行 3.crlf windows换行回车
+indent_size = 2  # 缩进大小
+indent_style = space  # 缩进风格
+insert_final_newline = true  # 文件末尾新插一行
+max_line_length = 80  # 一行最长80字符
+trim_trailing_whitespace = true  # 去除行首空白字符
+
+[*.md] # md文件
+max_line_length = 0
+trim_trailing_whitespace = false
+
+[COMMIT_EDITMSG]
+max_line_length = 0
