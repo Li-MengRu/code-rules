@@ -31,7 +31,7 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "node -v"
   },
   "dependencies": {
