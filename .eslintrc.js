@@ -1,7 +1,7 @@
 /*
  * @Author: limenguru
  * @Date: 2022-03-18 09:32:37
- * @LastEditTime: 2022-04-07 14:53:11
+ * @LastEditTime: 2022-04-07 15:50:06
  * @LastEditors: limenguru
  * @Description:
  * @FilePath: /code-rules/.eslintrc.js
@@ -28,7 +28,7 @@ module.exports = {
     'no-unused-vars': 2,
     'comma-dangle': ['error', 'never'], // 对于数组或者对象的属性最后一个后面去掉逗号
     eqeqeq: 1, // 使用强等号
-    'func-call-spacing': ['error', 'always'], // 函数名和（）之间放在一行，不换行
+    'func-call-spacing': ['error'], // 函数名和（）之间放在一行，不换行
     'global-require': 1, // require语句提升到文件顶部
     indent: ['error', 2], // 缩进两格
     complexity: ['error', 4], // 控制圈复杂度不能超过4
