@@ -19,15 +19,16 @@
     "prettier": "2.5.1"
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,jsx,less,md,json}": [
       "eslint --cache --fix",
-      "prettier --write"
-    ],
-    "*.{js,css,md}": [
       "prettier --write",
       "git add"
     ],
-    "*.js": "eslint --cache --fix"
+    "*.ts?(x)": [
+      "eslint --cache --fix",
+      "prettier --parser=typescript --write",
+      "git add"
+    ]
   },
   "scripts": {
     "prepare": "husky install",
