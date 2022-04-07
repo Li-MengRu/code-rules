@@ -1,7 +1,7 @@
 /*
  * @Author: limenguru
  * @Date: 2022-03-18 09:32:37
- * @LastEditTime: 2022-03-18 09:32:53
+ * @LastEditTime: 2022-04-07 14:53:11
  * @LastEditors: limenguru
  * @Description:
  * @FilePath: /code-rules/.eslintrc.js
@@ -56,6 +56,9 @@ module.exports = {
     'no-undef-init': 1, // 消除初始化变量值为undefined的
     'no-var': 1, // 声明变量尽量使用let const
     'object-shorthand': 1, // 简化对象字面值方法和属性
-    'prefer-template': 1 // 拼接字符串用模板文字而不是字符串串联
+    'prefer-template': 1, // 拼接字符串用模板文字而不是字符串串联
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'no-shadow': 'off'
   }
 };
