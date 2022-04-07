@@ -31,6 +31,8 @@
     ]
   },
   "scripts": {
+    "start": "npm run prepare",
+    "dev": "npm run prepare",
     "prepare": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "node -v"
   },
