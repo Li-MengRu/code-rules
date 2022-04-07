@@ -38,5 +38,10 @@
     "commitizen": "^4.2.4",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
