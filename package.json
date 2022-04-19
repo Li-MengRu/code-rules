@@ -1,49 +1,36 @@
 {
-  "name": "code-rules",
-  "version": "1.0.2",
+  "name": "demo",
+  "version": "1.0.0",
   "description": "",
-  "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.13.0",
-    "eslint": "^8.10.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.2",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.4",
-    "prettier": "2.5.1"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts,.tsx,js,jsx ",
+    "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./"
+  },
+  "husky": {
+    "pre-commit": "npm run lint"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "eslint --cache --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.ts?(x)": [
-      "eslint --cache --fix",
-      "prettier --parser=typescript --write",
-      "git add"
+    "**/*.{js,jsx,tsx,ts}": [
+      "npm run lint:script",
+      "git add --force"
     ]
   },
-  "scripts": {
-    "start": "npm run prepare",
-    "dev": "npm run prepare",
-    "prepare": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "node -v"
-  },
-  "dependencies": {
-    "commitizen": "^4.2.4",
-    "conventional-changelog": "^3.1.25",
-    "conventional-changelog-cli": "^2.2.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "commitlint": "^16.2.3",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "prettier": "^2.6.2"
   }
 }
