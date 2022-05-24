@@ -29,7 +29,6 @@
     "block-spacing": 0, // 语句之间用强制使用空格隔开
     "allowSingleLine": 0,
     "no-unused-vars": 2,
-    "comma-dangle": ["error", "never"], // 对于数组或者对象的属性最后一个后面去掉逗号
     "eqeqeq": 1, // 使用强等号
     "func-call-spacing": ["error"], // 函数名和（）之间放在一行，不换行
     "global-require": 1, // require语句提升到文件顶部
@@ -39,7 +38,6 @@
     "max-lines": 1, // 文件大小不超过300行
     "max-nested-callbacks": ["error", 3], // 回调函数最多嵌套三层
     "multiline-comment-style": ["error", "starred-block"], // 备注信息两行双斜杠的合并成/* */
-    "multiline-ternary": 1, // 三元表达式换行隔开
     "new-parens": 1, // new关键字调用不带参数的构造函数时增加（）
     "newline-per-chained-call": 1, // 调用链接方法换行
     "no-await-in-loop": 1, // for循环里不能有await，建议使用promise.all（）
