@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['airbnb-base', 'eslint:recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:prettier/recommended'
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -58,6 +64,7 @@ module.exports = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
     ],
     'no-shadow': 'off',
-    'no-continue': 1
+    'no-continue': 1,
+    'comma-dangle': ['error', 'never']
   }
 };
