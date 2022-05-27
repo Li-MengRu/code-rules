@@ -10,3 +10,8 @@ package.json
 .umi-test
 global.css
 *.png
+.commitlintrc.js
+.eslintrc.js
+.xaeslintcli
+.husky
+typings.d.ts
