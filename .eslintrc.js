@@ -29,13 +29,13 @@ module.exports = {
     'block-scoped-var': 2, // var变量提升
     'block-spacing': 0, // 语句之间用强制使用空格隔开
     allowSingleLine: 0,
-    'no-unused-vars': ["warning", { "args": "all" }],
+    'no-unused-vars': 2,
     eqeqeq: 1, // 使用强等号
     'func-call-spacing': ['error'], // 函数名和（）之间放在一行，不换行
     'global-require': 1, // require语句提升到文件顶部
     indent: ['error', 2], // 缩进两格
     complexity: ['error', 6], // 控制圈复杂度不能超过6
-    'max-len': ['warning', {code: 150}], // 单行代码最长不超过150
+    'max-len': 1, // 单行代码最长不超过80
     'max-lines': 1, // 文件大小不超过300行
     'max-nested-callbacks': ['error', 3], // 回调函数最多嵌套三层
     'multiline-comment-style': ['error', 'starred-block'], // 备注信息两行双斜杠的合并成/* */
