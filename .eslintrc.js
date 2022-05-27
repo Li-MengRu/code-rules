@@ -29,7 +29,7 @@ module.exports = {
     'block-scoped-var': 2, // var变量提升
     'block-spacing': 0, // 语句之间用强制使用空格隔开
     allowSingleLine: 0,
-    'no-unused-vars': 2,
+    'no-unused-vars': ["warning", { "args": "all" }],
     eqeqeq: 1, // 使用强等号
     'func-call-spacing': ['error'], // 函数名和（）之间放在一行，不换行
     'global-require': 1, // require语句提升到文件顶部
