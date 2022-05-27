@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "npm run prettier && npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "lint": "eslint . --ext .ts,.tsx,js,jsx ",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx ",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./"
   },
   "husky": {
@@ -46,5 +46,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "eslintIgnore": [
+    ".umirc.ts"
+  ]
 }
