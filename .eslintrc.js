@@ -65,6 +65,6 @@ module.exports = {
     ],
     'no-shadow': 'off',
     'no-continue': 1,
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'always']
   }
 };
