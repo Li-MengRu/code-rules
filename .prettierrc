@@ -1,11 +1,12 @@
 {
   "bracketSpacing": true,
-  "singleQuote": true,
+  "singleQuote": false,
   "trailingComma": "none",
   "semi": true,
   "printWidth": 160,
   "useTabs": false,
   "tabWidth": 2,
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": ".prettierrc",
