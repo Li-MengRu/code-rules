@@ -60,6 +60,7 @@ module.exports = {
     'prefer-template': 1, // 拼接字符串用模板文字而不是字符串串联
     'no-shadow': 2,
     'no-continue': 1,
+    'no-undef': 1,
     'comma-dangle': ['error', 'only-multiline'] // 禁止使用尾逗号
   }
 };
