@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run lint",
-    "dev": "npm run lint",
+    "start": "npm run jscpd && npm run lint",
+    "dev": "npm run jscpd && npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx ",
@@ -15,14 +15,20 @@
 		"arthur": "npm run jscpd"
   },
   "husky": {
-    "pre-commit": "npm run lint"
+    "pre-commit": "npm run jscpd && npm run lint"
   },
   "lint-staged": {
-    "**/*.{js,jsx,tsx,ts}": [
-      "npm run lint",
-      "prettier --write",
-      "git add --force"
-    ]
+    "*.{js,jsx,less,md,json}": [
+			"prettier --write"
+		],
+		"*.ts?(x)": [
+			"prettier --parser=typescript --write"
+		],
+		"**/*.{js,jsx,tsx,ts}": [
+			"npm run lint",
+			"prettier --write",
+			"git add --force"
+		]
   },
   "author": "",
   "license": "ISC",
